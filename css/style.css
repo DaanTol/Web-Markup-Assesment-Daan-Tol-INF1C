@@ -1,5 +1,37 @@
 html {
   display: flex;
   flex-wrap: nowrap;
-  background-color: aqua;
+  background-color: #ff5d9d;
+  border-color: #9919ff;
+  border-style: double;
+  border-width: 1em;
+}
+
+/* bepaal breedte fieldset */
+fieldset {
+  width: 100%;
+}
+
+/* geef de volgende values aan de onderstaande input en textarea */
+input,
+textarea {
+  background-color: #ff5d12;
+  border-color: #5af711;
+  border-width: 6px;
+  width: 99%;
+}
+
+/* vraag naar de placeholder en geef het een aparte kleur */
+::placeholder {
+  color: #ffe89d;
+}
+
+/* roep de class aan en geef het de volgende values */
+.CookieStatement {
+  position: fixed;
+  color: #fff;
+  border: 3px solid #fa0;
+  opacity: 50%;
+  bottom: 0;
+  width: auto;
 }
