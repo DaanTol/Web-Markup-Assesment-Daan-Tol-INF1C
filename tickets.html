@@ -1,27 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="End assesment WebMarkup" />
+    <meta
+      name="description"
+      content="Goedendag mijn naam is Daan Tol voor mijn eind assesment moet ik een opdracht maken met CSS en HTML.
+      Deze opdracht behoort tot het vak WebMarkup dat is gegeven door de leraar Frank Dersjante. Persoonlijk is dit een van mijn 
+      favoriete lessen en ik vind het daarom ook een leuk vak. Ik leer veel van de lessen en hoop dat mijn website dat ook laat zien."
+    />
     <meta name="author" content="Daan Tol" />
-    <meta name="keywords" content="HTML" />
-    <link rel="stylesheet" text="text/css" href="./css/style.css" />
+    <meta name="keywords" content="HTML, CSS, School, WebMarkup, Coderen" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/Logo.ico" />
     <title>Web markup end assesment tickets pagina</title>
   </head>
-  <body>
-    <img src="./img/Logo.png" />
+  <body id="ticketsPage">
+    <img
+      src="./img/Logo.png"
+      alt="logo"
+      class="logoWebsite"
+      title="Logo Website"
+    />
     <header>
-      <h1>Eind assesment Daan Tol</h1>
-      <h2>Ontdek de HTML en CSS wereld</h2>
+      <h1 id="websiteTitle">Travel guides</h1>
+      <h2 id="payOff">Ontdek de beste bestemmingen!</h2>
+      <nav id="hamMenu">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <ul id="hamItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bestdestinations.html">Best destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bestdestinations.html">Best destinations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <article id="articleTickets">
+      <p>
+        Hieronder bevinden zich bestemmingen van vakanties via Corendon. We
+        hopen zo dat u makkelijker uw keuzen kunt maken naar welke bestemming u
+        wilt heen gaan. We wensen u daarvoor alvast een prettige
+      </p>
+    </article>
+    <section id="grid-container">
+      <header>Prijzen vakantie bestemmingen:</header>
+      <table>
+        <tr>
+          <th>Vanaf</th>
+          <th>Waar?</th>
+          <th>Begin datum</th>
+          <th>Hoeveelheid dagen</th>
+          <th>Kosten (1 persoon)</th>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Curaçao / Willemstad</td>
+          <td>4 April 2021</td>
+          <td>8 dagen</td>
+          <td>&euro; 599.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Turkije / Antalya</td>
+          <td>7 December 2021</td>
+          <td>8 dagen</td>
+          <td>&euro; 429.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Griekenland / Kreta</td>
+          <td>15 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 539.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Bonaire / Kralendijk</td>
+          <td>11 Mei 2022</td>
+          <td>9 dagen</td>
+          <td>&euro; 1364.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Griekenland / Samos</td>
+          <td>6 Oktober 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 729.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Turkije / Marmaris</td>
+          <td>14 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 519.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Turkije / Side</td>
+          <td>12 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 573.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Bulgarije / Zwarte Zee</td>
+          <td>14 Juni 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 299.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Verenigde Arabische Emiraten / Dubai</td>
+          <td>16 December 2021</td>
+          <td>8 dagen</td>
+          <td>&euro; 4419.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Griekenland / Rhodos</td>
+          <td>14 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 703.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Verenigde Arabische Emiraten Ras al-Khaimah Rixos Bab Al Bahr</td>
+          <td>9 Januari 2022</td>
+          <td>4 dagen</td>
+          <td>&euro; 1315.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Egypte / Hurghada</td>
+          <td>6 Januari 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 579.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Spanje / Costa del Sol</td>
+          <td>15 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 739.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Spanje / Gran Canria</td>
+          <td>4 Mei 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 921.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Spanje / Mallorca</td>
+          <td>4 Mei 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 504.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Curaçao / Mambo Beach</td>
+          <td>11 Mei 2022</td>
+          <td>7 dagen</td>
+          <td>&euro; 1304.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Turkije / Bodrum</td>
+          <td>15 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 480.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Gambia / West Gambia / Kololi</td>
+          <td>3 April 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 1239.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Portugal / Madeira</td>
+          <td>11 Januari 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 686.-</td>
+        </tr>
+        <tr>
+          <td>Amsterdam</td>
+          <td>Griekenland / Zakhyntos</td>
+          <td>4 Mei 2022</td>
+          <td>8 dagen</td>
+          <td>&euro; 529.-</td>
+        </tr>
+      </table>
+
+      <p id="copyrightTableFooter">Source of data &copy; 2021 corendon.nl</p>
+
+      <aside class="topTickets">
+        <section id="productMamboBeach">
+          <h2>Curaçao / Mambo Beach</h2>
+          <a href="https://www.corendon.nl/curacao/mambo-beach/the-beach-house">
+            <img
+              id="picMamboBeach"
+              src="./img/Mambobeach.png"
+              alt="mambobeach"
+              title="MamboBeach"
+            />
+          </a>
+          <figure>
+            <figcaption>Fig 1. - Mambo Beach</figcaption>
+          </figure>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+
+        <section id="productBonaire">
+          <h2>Bonaire / Kralendijk</h2>
+          <a
+            href="https://www.corendon.nl/bonaire/kralendijk/fly-go-delfins-beach"
+          >
+            <img
+              id="picBonaire"
+              src="./img/Bonaire.png"
+              alt="Bonaire"
+              title="Bonaire"
+            />
+          </a>
+          <figure>
+            <figcaption>Fig 2. - Bonaire</figcaption>
+          </figure>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+
+        <section id="productRasal">
+          <h2>Verenigde Arabische Emiraten / Ras al-Khaimah</h2>
+          <a
+            href="https://www.corendon.nl/verenigde-arabische-emiraten/ras-al-khaimah/bin-majid-beach-hotel"
+          >
+            <img
+              id="picVerenigdeArabischeEmiraten"
+              src="./img/VerenigdeAmiraten.png"
+              alt="Verenigde Arabische Emiraten"
+              title="Ras al-Kaimah"
+            />
+          </a>
+          <figure>
+            <figcaption>Fig 3. - Ras al-Khaimah</figcaption>
+          </figure>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+      </aside>
+    </section>
     <p class="CookieStatement">Cookie statement</p>
-    <footer>&copy; Daan Tol</footer>
+    <footer class="studentName">&copy; Daan Tol</footer>
   </body>
 </html>

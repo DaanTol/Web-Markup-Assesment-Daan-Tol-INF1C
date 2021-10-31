@@ -1,122 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="End assesment WebMarkup" />
+    <meta
+      name="description"
+      content="Goedendag mijn naam is Daan Tol voor mijn eind assesment moet ik een opdracht maken met CSS en HTML.
+      Deze opdracht behoort tot het vak WebMarkup dat is gegeven door de leraar Frank Dersjante. Persoonlijk is dit een van mijn 
+      favoriete lessen en ik vind het daarom ook een leuk vak. Ik leer veel van de lessen en hoop dat mijn website dat ook laat zien."
+    />
     <meta name="author" content="Daan Tol" />
-    <meta name="keywords" content="HTML" />
-    <link rel="stylesheet" text="text/css" href="./css/style.css" />
+    <meta name="keywords" content="HTML, CSS, School, WebMarkup, Coderen" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/Logo.ico" />
     <title>Web markup end assesment home pagina</title>
   </head>
-  <body>
-    <img src="./img/Logo.png" alt="logo" />
+  <body id="indexPage">
+    <img
+      src="./img/Logo.png"
+      alt="logo"
+      class="logoWebsite"
+      title="Logo Website"
+    />
     <header>
-      <h1>Eind assesment Daan Tol</h1>
-      <h2>Ontdek de HTML en CSS wereld</h2>
+      <h1>Travel guides</h1>
+      <h2>Ontdek de beste bestemmingen!</h2>
     </header>
-    <nav>
-      <ul>
+    <nav id="hamMenu">
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+
+      <ul id="hamItems">
         <li><a href="bestdestinations.html">Best destination</a></li>
         <li><a href="tickets.html">Tickets</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <video class="video-container" muted autoplay loop>
-      <source src="./video/project-2019-animated-login.mp4" type="video/mp4" />
-      <source src="./video//project-2019-animated-login.ogg" type="video/ogg" />
+
+    <video muted autoplay loop>
+      <source src="./video/travel.mp4" type="video/mp4" />
+      <source src="./video/travel.ogg" type="video/ogg" />
     </video>
-    <article>
-      <header><h2>Japan Kyoto</h2></header>
-      <section>
-        <p>
-          Kyoto wordt beschouw als de culturele hoofdstad van Japan en een
-          belangrijke toeristische bestemming. Het staat bekend om de talloze
-          boeddhistische tempel, Shinto-heiligdommen, paleizen en tuinen die
-          allemaal op de werelderfgoed lijst staan. Des tijds was dit ook de
-          keizerlijke hoofdstad van Japan. Kyoto is ook velen maler goedkoper
-          dan Tokyo en staat ook bekend als een van de goedkoopste bestemmingen
-          mogelijk. Als je opzoek bent naar meer rust en niet naar drukke steden
-          wilt reizen zal Kyoto de perfecte bestemming zijn.
+
+    <section id="flexSection">
+      <article id="article1">
+        <h2>Japan Kyoto</h2>
+        <p class="mainArticle">
+          <a
+            href="https://www.expedia.nl/Kyoto.d6131486.Vakantie-Stedentrips?pwaLob=wizard-package-pwa"
+          >
+            <img
+              id="picKyoto"
+              src="./img/Kyoto.png"
+              alt="kyoto"
+              title="Japan Kyoto"
+            />
+          </a>
+          <span id="paragraph1">
+            Kyoto wordt beschouw als de culturele hoofdstad van Japan en een
+            <strong>belangrijke toeristische bestemming.</strong> Het staat
+            bekend om de talloze boeddhistische tempel, Shinto-heiligdommen,
+            paleizen en tuinen die allemaal op de werelderfgoed lijst staan. Des
+            tijds was dit ook de keizerlijke hoofdstad van Japan. Kyoto is ook
+            velen maler goedkoper dan Tokyo en staat ook bekend als een van de
+            goedkoopste bestemmingen mogelijk. Als je opzoek bent naar meer rust
+            en niet naar drukke steden wilt reizen zal Kyoto de perfecte
+            bestemming zijn. Er is veel te doen en het is een perfecte
+            bestemming als u er is op uit wilt.
+          </span>
         </p>
-        <a href="https://www.expedia.nl/Kyoto.d6131486.Vakantie-Stedentrips?pwaLob=wizard-package-pwa">
-          <img src="./img/Kyoto.png" alt="kyoto" />
-        </a>
-        <p>
+        <p class="infoSite">
           <a href="https://www.reisgraag.nl/vakantie-japan/kyoto/">
             Meer info over Kyoto
           </a>
         </p>
-      </section>
-      <footer>
-        <p>
-          <a href="https://www.linda.nl/reizen/14-fotos-kyoto-japan/">
-            &copy;Copyright info used by Daan Tol
-          </a>
-        </p>
-      </footer>
-    </article>
+        <footer>
+          <p>
+            <a href="https://www.linda.nl/reizen/14-fotos-kyoto-japan/">
+              &copy;Copyright info used by Daan Tol
+            </a>
+          </p>
+        </footer>
+      </article>
 
-    <article>
-      <header><h2>USA New York</h2></header>
-      <section>
-        <p>
-          New York City is de grootste stad van de Verenigde Staten van Amerika en is gelegen in de staat New York.
-          De stad vormt een van ’s werelds belangrijkste centra voor handel en financiën, dankzij haar ligging aan een van de beste natuurlijke havens. 
-          New York speelt daarenboven een leidinggevende en invloedrijke rol in media, onderwijs, entertainment, kunst, mode en publiciteit. 
-          Ze vormt een centrum van internationale handel, financiën, politiek, communicatie, film, muziek, mode en cultuur.
+      <article id="article2">
+        <h2>Verenigde-Staten New York</h2>
+        <p class="mainArticle">
+          <a
+            href="https://www.tui.nl/reizen/verenigde-staten/new-york/new-york/"
+          >
+            <img
+              id="picNewYork"
+              src="./img/Newyork.png"
+              alt="new york"
+              title="Amerika New York"
+            />
+          </a>
+          <span id="paragraph2">
+            New York City is de grootste stad van de Verenigde Staten van
+            Amerika en is gelegen in de staat New York.
+            <strong
+              >De stad vormt een van ’s werelds belangrijkste centra voor
+              handel</strong
+            >
+            en financiën, dankzij haar ligging aan een van de beste natuurlijke
+            havens. New York speelt daarenboven een leidinggevende en
+            invloedrijke rol in media, onderwijs, entertainment, kunst, mode en
+            publiciteit. Ze vormt een centrum van internationale handel,
+            financiën, politiek, communicatie, film, muziek, mode en cultuur.
+          </span>
         </p>
-        <a href="https://www.tui.nl/reizen/verenigde-staten/new-york/new-york/">
-          <img src="./img/Newyork.png" alt="new york" />
-        </a>
-        <p>
+        <p class="infoSite">
           <a href="https://www.newyorkvoorbeginners.nl/">
             Meer info over New York
           </a>
         </p>
-      </section>
-      <footer>
-        <p>
-          <a href="https://pixabay.com/photos/newyork-city-ny-nyc-usa-america-3444218/">
-            &copy;Copyright info used by Daan Tol
-          </a>
-        </p>
-      </footer>
-    </article>
+        <footer>
+          <p>
+            <a
+              href="https://pixabay.com/photos/newyork-city-ny-nyc-usa-america-3444218/"
+            >
+              &copy;Copyright info used by Daan Tol
+            </a>
+          </p>
+        </footer>
+      </article>
 
-    <article>
-      <header><h2>Zuid-Korea Seoul<h2></header>
-      <section>
-        <p>
-          Seoul is uitgegroeid tot één van de grootste wereldsteden die we kennen.
-          Binnen Azië is het één van de meest welvarende steden en het land zelf is de nummer vier economie van het hele continent Azië. 
-          Het moet China, Japan en India voor zich dulden. Seoul is vooral een moderne en leefbare stad, waar veel ruimte is voor ontwikkeling, cultuur en ontspanning. 
-          Seoul heeft geen indeling van een centrum met omringende wijken, maar bestaat uit 25 stadsdistricten.
+      <article id="article3">
+        <h2>Zuid-Korea Seoul</h2>
+        <p class="mainArticle">
+          <a
+            href="https://www.expedia.nl/Seoel.d178308.Vakantie-Stedentrips?pwaLob=wizard-package-pwa"
+          >
+            <img
+              id="picSeoul"
+              src="./img/Seoul.png"
+              alt="seoul"
+              title="Zuid-Korea Seoul"
+            />
+          </a>
+          <span id="paragraph3">
+            Seoul is uitgegroeid tot één van de grootste wereldsteden die we
+            kennen. Binnen Azië is het één van de meest welvarende steden en het
+            land zelf <strong>is de nummer vier economie</strong> van het hele
+            continent Azië. Het moet <em>China, Japan en India</em> voor zich
+            dulden. Seoul is vooral een moderne en leefbare stad, waar veel
+            ruimte is voor ontwikkeling, cultuur en ontspanning. Seoul heeft
+            geen indeling van een centrum met omringende wijken, maar bestaat
+            uit 25 stadsdistricten.
+          </span>
         </p>
-        <a href="https://www.expedia.nl/Seoel.d178308.Vakantie-Stedentrips?pwaLob=wizard-package-pwa">
-          <img src="./img/Seoul.png" alt="seoul" />
-        </a>
-        <p>
+        <p class="infoSite">
           <a href="https://www.seoulvoorbeginners.nl/">
             Meer info over Seoul
           </a>
         </p>
-      </section>
-      <footer>
-        <p>
-          <a href="https://nl.freepik.com/vrije-photo/seoul-stadsgezicht-bij-schemering-in-zuid-korea_11306365.htm">
-            &copy;Copyright info used by Daan Tol
-          </a>
-        </p>
-      </footer>
-    </article>
+        <footer>
+          <p>
+            <a
+              href="https://nl.freepik.com/vrije-photo/seoul-stadsgezicht-bij-schemering-in-zuid-korea_11306365.htm"
+            >
+              &copy;Copyright info used by Daan Tol
+            </a>
+          </p>
+        </footer>
+      </article>
+    </section>
 
-    <aside>
+    <aside id="topDestinations">
+      <h2>Top plaatsen dat een trend zullen worden:</h2>
       <ol>
-        <li>Upcoming route 1</li>
-        <li>Upcoming route 2</li>
-        <li>Upcoming route 3</li>
-        <li>Upcoming route 4</li>
-        <li>Upcoming route 5</li>
+        <li>Japan Tokyo</li>
+        <li>Verenigde-Staten Miami</li>
+        <li>Turkije Istanbul</li>
+        <li>Verenigde Arabische Emiraten - Abu Dahbi</li>
+        <li>Zuid-Korea Seoul</li>
       </ol>
     </aside>
 

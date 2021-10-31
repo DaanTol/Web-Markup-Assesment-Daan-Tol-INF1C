@@ -1,41 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="End assesment WebMarkup" />
+    <meta
+      name="description"
+      content="Goedendag mijn naam is Daan Tol voor mijn eind assesment moet ik een opdracht maken met CSS en HTML.
+      Deze opdracht behoort tot het vak WebMarkup dat is gegeven door de leraar Frank Dersjante. Persoonlijk is dit een van mijn 
+      favoriete lessen en ik vind het daarom ook een leuk vak. Ik leer veel van de lessen en hoop dat mijn website dat ook laat zien."
+    />
     <meta name="author" content="Daan Tol" />
-    <meta name="keywords" content="HTML" />
-    <link rel="stylesheet" text="text/css" href="./css/style.css" />
+    <meta name="keywords" content="HTML, CSS, School, WebMarkup, Coderen" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/Logo.ico" />
     <title>Web markup end assesment contact pagina</title>
   </head>
-  <body>
-    <img src="./img/Logo.png" />
+  <body id="contactPage">
+    <img
+      src="./img/Logo.png"
+      alt="logo"
+      class="logoWebsite"
+      title="Logo Website"
+    />
     <header>
-      <h1>Eind assesment Daan Tol</h1>
-      <h2>Ontdek de HTML en CSS wereld</h2>
+      <h1 id="websiteTitle">Travel guides</h1>
+      <h2 id="payOff">Ontdek de beste bestemmingen!</h2>
+      <nav id="hamMenu">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <ul id="hamItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bestdestinations.html">Best destinations</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bestdestinations.html">Best destinations</a></li>
-        <li><a href="tickets.html">Tickets</a></li>
-      </ul>
-    </nav>
-    <form>
-      <fieldset>
-        <legend>Neem contact met ons op:</legend>
+    <section id="grid-container">
+      <h2 id="contactInfo">
+        Wil je ons bereiken? neem hieronder dan contact met ons op:
+      </h2>
+      <form>
+        <fieldset>
+          <legend>Neem contact met ons op:</legend>
 
-        <label for="vname">Naam bezoeker:</label>
-        <input type="text" name="name" placeholder="Enter name" />
+          <label>Naam bezoeker:</label>
+          <input type="text" name="name" placeholder="Enter name" />
 
-        <label for="vemail">Email:</label>
-        <input type="email" name="email" placeholder="Enter email" />
+          <label>Email:</label>
+          <input type="email" name="email" placeholder="Enter email" />
 
-        <label for="vmessage">Bericht:</label>
-        <textarea name="message" placeholder="Enter message"></textarea>
-      </fieldset>
-    </form>
+          <label>Bericht:</label>
+          <textarea name="message" placeholder="Enter message"></textarea>
+
+          <input type="submit" value="Verstuur Bericht" />
+        </fieldset>
+      </form>
+      <aside class="topTickets">
+        <section id="productTurkije">
+          <h2>Egypte / Antalya / Lara</h2>
+          <a
+            href="https://www.corendon.nl/turkije/turkse-riviera/antalya/lara/grand-park-lara"
+          >
+            <img
+              id="picAntalya"
+              src="./img/Turkije.png"
+              alt="Turkije Antalya"
+              title="Antalya"
+            />
+          </a>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+
+        <section id="productIbiza">
+          <h2>Spanje / Ibiza</h2>
+          <a
+            href="https://www.corendon.nl/spanje/balearen/ibiza/cala-gracio/marble-stella-maris-ibiza"
+          >
+            <img
+              id="picIbiza"
+              src="./img/Ibiza.png"
+              alt="Ibiza"
+              title="Spanje Ibiza"
+            />
+          </a>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+
+        <section id="productDubai">
+          <h2>Verenigde Arabische Emiraten / Dubai / Jumeirah</h2>
+          <a
+            href="https://www.corendon.nl/verenigde-arabische-emiraten/dubai/jumeirah/rixos-the-palm-dubai-hotel-suites"
+          >
+            <img
+              id="picVerenigdeArabischeEmiratenDubai"
+              src="img/Dubai.png"
+              alt="Verenigde Arabische Emiraten Dubai"
+              title="Dubai"
+            />
+          </a>
+          <p>Source of image &copy; 2021 corendon.nl</p>
+        </section>
+      </aside>
+    </section>
     <p class="CookieStatement">Cookie statement</p>
-    <footer>&copy; Daan Tol</footer>
+    <footer class="studentName">&copy; Daan Tol</footer>
   </body>
 </html>
